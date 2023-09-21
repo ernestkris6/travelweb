@@ -89,7 +89,7 @@ function Footer() {
                             aria-label='Facebook'
                             >
 
-                        <i className='fa-brands fa-facebook-f'/>
+                        <i className='fas fa-facebook-f' />
                         </Link>
 
                         <Link className='social-icon-link instagram'
