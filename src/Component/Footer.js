@@ -1,6 +1,8 @@
 import React from 'react';
 import { Button } from './Button';
 
+
+
 import './Footer.css';
 import { Link } from 'react-router-dom';
 
@@ -13,15 +15,17 @@ function Footer() {
             </p>
 
             <p className='footer-subscription-text'>
-                You can unsubscribe any time.
+                You can unsubscribe at any time.
             </p>
 
             <div className='input-areas'>
                 <form>
-                    <input type='email' 
+                    <input 
+                    className='footer-input'
                     name='email' 
+                    type='email'
                     placeholder='Your Email' 
-                    className='footer-input' />
+                     />
 
                     <Button buttonStyle='btn--outline'>Subscribe</Button>
                 </form>
@@ -31,32 +35,29 @@ function Footer() {
 
         <div className='footer-links'>
             <div className='footer-link-wrapper'>
-                <div className='foooter-link-items'>
-                    <h2>About Us</h2>
+                <div className='footer-link-items'>
+                    <h2>ABOUT US</h2>
                     <Link to='/'>How it works</Link>
                     <Link to='/'>Testimonials</Link>
                     <Link to='/'>Careers</Link>
                     <Link to='/'>Investors</Link>
                     <Link to='/'>Terms of Service</Link>
-                </div>
+               </div>
 
-                <div className='foooter-link-items'>
-                    <h2>Contact Us</h2>
+               <div className='footer-link-items'>
+               <h2>Contact Us</h2>
                     <Link to='/'>Contact</Link>
                     <Link to='/'>Support</Link>
                     <Link to='/'>Destination</Link>
                     <Link to='/'>Sponsorships</Link>
                 </div>
-            </div>
 
-            <div className='footer-link-wrapper'>
-                <div className='foooter-link-items'>
-                    <h2>Videos</h2>
+                <div className='footer-link-items'>
+                <h2>Videos</h2>
                     <Link to='/'>Submit Video</Link>
                     <Link to='/'>Ambassadors</Link>
                     <Link to='/'>Agency</Link>
                     <Link to='/'>Influencer</Link>
-                    
                 </div>
 
                 <div className='footer-link-items'>
@@ -69,64 +70,61 @@ function Footer() {
                 </div>
             </div>
         </div>
+    
 
         <section className='social-media'>
             <div className='social-media-wrap'>
                 <div className='footer-logo'>
                     <Link to='/' className='social-logo'>
-                    TRVL <i className='fas fa-angle-double-right' />
+                    TRVL 
+                    <i className='fas fa-angle-double-right' />
                     </Link>
                 </div>
 
                 <small className='website-rights'>TRVL &copy; 2020</small>
                   <div className='social-icons'>
-                        <Link className='social-icon-link facebook'>
-                            <i className='fas fa-facebook' 
+                        <Link className='social-icon-link facebook' 
                             to='/'
                             target='_blank'
                             aria-label='Facebook'
-                            />
+                            >
 
-                            
+                        <i className='fa-brands fa-facebook-f'/>
                         </Link>
 
-                        <Link className='social-icon-link instagram'>
-                            <i className='fas fa-instagram' 
-                            to='/'
+                        <Link className='social-icon-link instagram'
+                             to='/'
                             target='_blank'
                             aria-label='Instagram'
-                            />
+                            >
 
-                            
+                        <i className='fas fa-instagram'/>
                         </Link>
 
-                        <Link className='social-icon-link linkedin'>
-                            <i className='fas fa-linkedin' 
+                        <Link className='social-icon-link linkedin'
                             to='/'
                             target='_blank'
                             aria-label='LinkedIn'
-                            />
-
+                            >
+                        <i className='fas fa-linkedin'/>
                             
                         </Link>
 
-                        <Link className='social-icon-link twitter'>
-                            <i className='fas fa-twitter' 
+                        <Link className='social-icon-link twitter' 
                             to='/'
                             target='_blank'
                             aria-label='Twitter'
-                            />
+                            >
 
-                            
+                        <i className='fas fa-twitter' />
                         </Link>
 
-                        <Link className='social-icon-link youtube'>
-                            <i className='fas fa-youtube' 
+                        <Link className='social-icon-link youtube'
                             to='/'
                             target='_blank'
                             aria-label='YouTube'
-                            />
-
+                            >
+                         <i className='fas fa-youtube'  />
                             
                         </Link>
                 </div>
