@@ -9,7 +9,7 @@ const SIZES = ['btn--medium', 'btn--large'];
 export const Button = ({
     Children, 
     type, 
-    onClick, 
+    onclick, 
     buttonStyle, 
     buttonSize
 }) => {
